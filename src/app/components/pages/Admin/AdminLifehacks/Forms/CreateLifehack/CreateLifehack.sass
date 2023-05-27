@@ -1,0 +1,87 @@
+.create-lifehack
+  margin: 100px auto
+  width: 100vw
+  height: 100vh
+  &__title
+    font-size: 36px
+    font-weight: 500
+    margin-bottom: 60px
+  &__wrapper
+    border: 1px solid gray
+    border-radius: 10px
+    width: 100%
+    display: flex
+    justify-content: space-between
+    .create-lifehack__upload
+      position: relative
+      flex: 1
+      width: 100%
+      display: flex
+      justify-content: center
+      align-items: center
+    .create-lifehack__content
+      flex: 1
+      width: 100%
+      display: flex
+      justify-content: center
+    .create-lifehack-form
+      display: flex
+      flex-direction: column
+      margin-top: 10px
+      .create-lifehack-form__title
+        background: #F5F5F5
+        border: 1px solid rgba(186, 188, 192, 0.86)
+        border-radius: 8px
+        width: 360px
+        height: 49px
+        padding: 10px
+        margin-top: 20px
+        &:focus
+          outline: 1px solid #616fb5
+      .create-lifehack-form__descr
+        background: #F5F5F5
+        border: 1px solid rgba(186, 188, 192, 0.86)
+        border-radius: 8px
+        width: 360px
+        height: 176px
+        padding: 10px
+        margin-top: 20px
+        &:focus
+          outline: 1px solid #616fb5
+      .create-lifehack-form__btns
+        display: flex
+        justify-content: center
+        margin: 50px auto
+        .create
+          cursor: pointer
+          background: #51A7FF
+          border-radius: 8px
+          border: none
+          width: 128px
+          height: 34px
+          color: #fff
+          transition: .3s
+          font-size: 16px
+          font-weight: 600
+          line-height: 20px
+          letter-spacing: 0em
+          &:hover
+            transition: .3s
+            transform: scale(1.1)
+        .goback
+          cursor: pointer
+          width: 128px
+          height: 34px
+          background: #fff
+          border-radius: 8px
+          border: 2px solid #51A7FF
+          color: #51A7FF
+          margin-left: 20px
+          font-size: 16px
+          font-weight: 600
+          line-height: 20px
+          letter-spacing: 0em
+          transition: .3s
+          &:hover
+            transition: .3s
+            transform: scale(1.1)

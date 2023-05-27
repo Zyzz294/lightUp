@@ -1,0 +1,44 @@
+.dropbtn
+  display: flex
+  justify-content: center
+  align-items: center
+  & img
+    border-radius: 50px
+    width: 60px
+    height: 60px
+    margin-right: 5px
+    outline: 1px solid white
+  & small
+    color: white
+.dropdown
+  position: relative
+  display: inline-block
+.dropdown-content
+  margin-top: 10px
+  display: none
+  position: absolute
+  background-color: #f1f1f1
+  min-width: 160px
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2)
+  z-index: 1222
+  &::after
+    // border-width: 0 10px 8px
+    // border-color: white
+    // border-style: solid
+    // content: ""
+    // position: absolute
+    // right: 120px
+    // top: -8px
+  a
+    color: black
+    padding: 12px 16px
+    text-decoration: none
+    display: block
+    &:hover
+      color: orange
+      background-color: #ddd
+      border-radius: 10px
+.dropdown-active
+  .dropdown-content
+    display: block
+    border-radius: 10px

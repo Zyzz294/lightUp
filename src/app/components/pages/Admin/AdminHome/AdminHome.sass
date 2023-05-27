@@ -1,0 +1,43 @@
+.my-nav
+  display: flex
+  align-items: center
+  justify-content: space-between
+  height: 61px
+  width: 100%
+  background-color: #51A7FF
+  position: fixed
+  z-index: 50
+.my-main
+  padding: 50px
+.my-p
+  margin: 20px
+.my-burger-btn
+  width: 20px
+  height: 20px
+  margin-left: 20px
+  position: relative
+  cursor: pointer
+
+  .my-burger-btn__span-top,
+  .my-burger-btn__span-middle,
+  .my-burger-btn__span-bottom
+    position: absolute
+    width: 24px
+    height: 2px
+    top: 0
+    left: 0
+    background: #fff
+    transform: rotate(0)
+    transition: all 0.5s
+
+  .my-burger-btn__span-middle
+    transform: translateY(7px)
+  .my-burger-btn__span-bottom
+    transform: translateY(14px)
+
+  .my-burger-btn__span-top.active
+    transform: rotate(45deg) translateY(6px) translateX(6px)
+  .my-burger-btn__span-middle.active
+    display: none
+  .my-burger-btn__span-bottom.active
+    transform: rotate(-45deg) translateY(6px) translateX(-6px)

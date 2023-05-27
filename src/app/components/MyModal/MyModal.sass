@@ -1,0 +1,31 @@
+.mymodal
+  width: 100vw
+  height: 100vh
+  background-color: #222222
+  position: fixed
+  top: 0
+  left: 0
+  display: flex
+  justify-content: center
+  align-items: center
+  opacity: 0
+  pointer-events: none
+  transition: 0.5s
+  &.active
+    opacity: 1
+    pointer-events: all
+  &__content
+    padding: 20px
+    border-radius: 12px
+    background-color: #fff
+    transform: scale(0.5)
+    transition: 0.4s all
+    // width: 50vw
+    &.active
+      transform: scale(1)
+
+// .mymodal.active
+//   opacity: 1
+//   pointer-events: all
+// .mymodal__content.active
+//   transform: scale(1)

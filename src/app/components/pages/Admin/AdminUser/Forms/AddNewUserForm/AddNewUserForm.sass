@@ -1,0 +1,88 @@
+.user-form
+  max-width: 780px
+  display: flex
+  flex-direction: column
+  padding: 30px
+  margin: 100px auto
+  background-color: #ECECEC
+  border-radius: 16px
+  &__content
+    display: flex
+  &__title-wrapper
+    max-width: 720px
+  h2
+    font-size: 32px
+    font-weight: 500
+    line-height: 39px
+    letter-spacing: 0em
+    text-align: left
+    padding-bottom: 40px
+  &__left
+    margin-right: 90px
+    .form-btn__wrapper
+      display: flex
+      justify-content: space-around
+      align-items: center
+  &__right
+  label
+    display: block
+    font-size: 12px
+    font-weight: 400
+    line-height: 15px
+    letter-spacing: 0em
+    text-align: left
+  input
+    width: 315px
+    height: 50px
+    display: block
+    margin-top: 15px
+    margin-bottom: 15px
+    padding: 10px 20px
+    color: #353535
+    font-size: 18px
+    background: #FFFFFF
+    border: 1px solid #AEAEAE
+    border-radius: 8px
+    &:focus
+      outline: 1px solid #0743f5
+  button
+    display: block
+    cursor: pointer
+    width: 136px
+    height: 40px
+    padding: 10px
+    margin-top: 30px
+    font-size: 20px
+    color: #fff
+    background: #51A7FF
+    border: none
+    border-radius: 12px
+    transition: .3s
+    font-weight: 600
+    transition: .3s
+    line-height: 24px
+    text-align: center
+    &:hover
+      transition: .3s
+      transform: scale(1.1)
+  .cancel-btn
+    background: #BCBCBC
+  select
+    height: 50px
+    width: 315px
+    margin-top: 15px
+    margin-bottom: 15px
+    padding: 0 20px
+    font-size: 18px
+    text-align: center
+    appearance: none
+    background: #FFFFFF
+    border: 1px solid #AEAEAE
+    color: #353535
+    border-radius: 10px
+    cursor: pointer
+    &:focus
+      outline: 1px solid #0743f5
+  .error
+    color: #e53e3e
+    font-size: 14px

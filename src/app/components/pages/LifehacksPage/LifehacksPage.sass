@@ -1,0 +1,53 @@
+
+.mainhacks
+  max-width: 1160px
+  margin: 0 auto
+  &-theme
+    font-size: 40px
+    font-weight: 600
+    margin: 200px 0px 0px
+  &_item
+    display: flex
+    justify-content: space-between
+    margin-top: 50px
+
+    &_txt
+      max-width: 500px
+      padding: 50px 80px 50px 0
+      text-align: left      
+      &-title
+        font-weight: 500
+        font-size: 30px
+        line-height: 37px
+        margin-bottom: 40px
+        word-wrap: break-word
+      &-descr
+        font-weight: 400
+        font-size: 22px
+        line-height: 180%      
+        word-wrap: break-word
+
+
+    &-img
+      max-width: 700px
+      min-height: 500px
+      margin-top: 50px
+      position: relative
+      cursor: pointer
+      border-radius: 40px
+      & img
+        width: 100%
+    &-img::before
+      content: url(../../../../../public/assets/icons/YouTubeIcon.svg)
+      position: absolute
+      transform: scale(0.5)
+      display: block
+      bottom: 50%
+      left: -45px
+      z-index: 1
+.video
+  width: 100%
+  max-width: 880px
+  min-height: 500px
+  background-size: cover
+  border-radius: 20px

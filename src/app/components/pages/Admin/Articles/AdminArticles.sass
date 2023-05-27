@@ -1,0 +1,55 @@
+.db-articles
+    max-width: 1160px
+    margin: 60px auto
+    &_theme
+        display: flex
+        justify-content: space-between
+        & h2
+            font-size: 36px
+            font-weight: 500
+        & button
+            background-color: #0b73db
+            color: #fff
+            width: 200px
+            height: 38px
+            border-radius: 8px
+            border: none
+            font-size: 15px
+            font-weight: 500
+            cursor: pointer
+            text-transform: uppercase
+            &:hover
+                transition: .3s
+                transform: scale(1.1)
+    .db-articles_cards
+        display: flex
+        flex-wrap: wrap
+        margin-top: 60px
+        justify-content: space-between
+        &-item
+            width: 370px
+            height: 440px
+            border: 1px solid #E3E3E3
+            border-radius: 16px
+            padding: 10px
+            margin: 10px auto
+            position: relative
+            overflow: hidden
+            & h4
+                font-size: 20px
+                font-weight: 600
+                margin: 20px auto
+            & p
+                padding: 0 10px 10px 10px
+                font-size: 16px
+                font-weight: 400
+                word-break: break-all
+            &_img
+                width: 350px
+                height: 200px
+                border-radius: 16px
+
+            &_dots
+                position: absolute
+                top: 25px
+                right: 25px

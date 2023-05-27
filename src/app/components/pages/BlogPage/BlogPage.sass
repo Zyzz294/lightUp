@@ -1,0 +1,154 @@
+.blog__title
+  background-image: url('../../../../../public/assets/img/blogs-bg.png')
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+  display: flex
+  height: 90vh
+  align-items: center
+  justify-content: center
+  color: #FFFFFF
+  font-size: 70px
+  font-weight: 700
+  line-height: 85px
+  letter-spacing: 0em
+.blog__btn-wrapper
+  display: flex
+  justify-content: flex-end
+  margin-top: 40px
+.blog__btn
+  display: flex
+  align-items: center
+  justify-content: space-between
+  cursor: pointer
+  height: 48px
+  width: 229px
+  border-radius: 16px
+  padding: 10px 20px
+  background: #F58534
+  font-size: 22px
+  font-weight: 500
+  line-height: 27px
+  letter-spacing: 0em
+  color: #FFFFFF
+  border: none
+  transition: .3s
+  &:hover
+    transition: .3s
+    transform: scale(1.1)
+.blog__card-wrapper
+  margin-top: 105px
+  .blog-card
+    display: flex
+    // justify-content: space-between
+    &__date
+      font-size: 24px
+      font-weight: 500
+      line-height: 29px
+      letter-spacing: 0em
+      color: #F58534
+      margin-right: 60px
+    &__img
+      width: 500px
+      height: 300px
+      border-radius: 10px
+      margin-right: 60px
+    .blog-card-content
+      max-width: 446px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      &__title
+        font-size: 30px
+        font-weight: 600
+        line-height: 37px
+        letter-spacing: 0em
+        align-items: center
+        overflow: hidden
+      &__descr
+        font-size: 20px
+        font-weight: 400
+        line-height: 24px
+        letter-spacing: 0em
+        align-items: center
+        overflow: hidden
+      .blog-btn_sm
+        width: 165px
+.horizontal
+  border: 1px solid gray
+  opacity: 0.1
+  margin: 40px 0 90px
+
+// Create post POPUP MODAL
+.create-post
+  margin: 0 auto
+  &__header
+    border-radius: 16px 16px 0 0
+    width: 900px
+    height: 50px
+    background: #F58534
+    display: flex
+    justify-content: center
+    align-items: center
+  &__title
+    font-size: 20px
+    font-weight: 500
+    line-height: 24px
+    letter-spacing: 0em
+    text-align: center
+    color: #fff
+  &__wrapper
+    max-width: 900px
+    display: flex
+    justify-content: space-between
+    margin-top: 5px
+    .create-post__upload
+      // max-width: 500px
+      & img
+        border-radius: 16px
+        max-width: 600px
+        max-height: 370px
+      input[type=file]
+        width: 350px
+        max-width: 100%
+        color: gray
+        padding: 5px
+        background: #fff
+        border-radius: 10px
+        border: 1px solid #F58534
+      input[type=file]::file-selector-button
+        margin-right: 20px
+        border: none
+        background: #eee4e4
+        padding: 10px 20px
+        border-radius: 10px
+        color: #F58534
+        cursor: pointer
+        transition: 0.3s
+      input[type=file]::file-selector-button:hover
+        transform: scale(0.9)
+        transition: 0.3s
+      .image-remove
+        background: #eee4e4
+        border-radius: 10px
+        border: none
+        padding: 10px 20px
+        margin: 10px 0 0 10px
+        color: #F58534
+        cursor: pointer
+        transition: 0.3s
+        &:hover
+          transform: scale(0.9)
+          transition: 0.3s
+    .create-post__content
+      max-width: 360px
+      .create-post__user
+        display: flex
+        gap: 20px
+        align-items: center
+        padding: 14px
+      .create-post__ava
+        width: 60px
+        height: 60px
+        border-radius: 50%
+        outline: 1px solid orange

@@ -1,0 +1,67 @@
+.profile
+    margin: 80px auto
+    background-color: #F5F5F5
+    width: 100%
+    min-height: 600px
+    border-radius: 20px
+    padding: 40px
+    &__title
+        margin: 0 auto
+        display: flex
+        width: 700px
+        align-items: center
+        justify-content: space-around
+        &-ava
+            width: 150px
+            height: 150px
+            border-radius: 50%
+            cursor: grab
+            box-shadow: 0px 0px 4px 4px rgb(54, 177, 109)
+            // outline: 2px solid rgb(54, 177, 109)
+        &-name
+            font-weight: 500
+            font-size: 36px
+            line-height: 44px
+    &__form
+        max-width: 700px
+        display: flex
+        flex-direction: column
+        margin: 50px auto
+        .profile__form-inputs
+            display: flex
+            justify-content: center
+            align-items: center
+            .profile__form-input
+                background: #F8F8F8
+                border: 1px solid #AEAEAE
+                border-radius: 8px
+                width: 315px
+                height: 50px
+                margin: 20px
+                padding: 10px
+                &:focus
+                    outline-color: rgb(158, 197, 210)
+        .profile__form-btn-wrapper
+            width: 100%
+            margin: 50px auto 0
+            display: flex
+            justify-content: space-around
+            align-content: center
+        &-btn
+            width: 180px
+            height: 50px
+            background: rgb(158, 197, 210)
+            border-radius: 12px
+            color: #fff
+            border: none
+            font-size: 20px
+            font-weight: 600
+            transition: .3s
+            cursor: pointer
+            &:hover
+                transition: .3s
+                transform: scale(1.1)
+.profile-bg
+    padding: 40px
+    background-image:  url('./profile-bg.png')
+    background-size: cover
